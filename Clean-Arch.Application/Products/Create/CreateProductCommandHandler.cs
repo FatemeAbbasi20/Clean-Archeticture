@@ -14,11 +14,11 @@ using System.Threading.Tasks;
 
 namespace Clean_Arch.Application.Products.Create
 {
-    public class CreateProductHandler : IRequestHandler<CreateProductCommand,long>
+    public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand,long>
     {
         private IProductRepository _repository;
         private readonly IMediator _mediator;
-        public CreateProductHandler(IProductRepository repository,IMediator mediator)
+        public CreateProductCommandHandler(IProductRepository repository,IMediator mediator)
         {
             _repository = repository;
             _mediator = mediator;

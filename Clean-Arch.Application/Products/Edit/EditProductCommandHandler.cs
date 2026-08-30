@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Clean_Arch.Application.Products.Edit
 {
-    public class EditProductHandler : IRequestHandler<EditProductCommand>
+    public class EditProductCommandHandler : IRequestHandler<EditProductCommand>
     {
         private IProductRepository _repository;
         private readonly IMediator _mediator;
-        public EditProductHandler(IProductRepository repository, IMediator mediator)
+        public EditProductCommandHandler(IProductRepository repository, IMediator mediator)
         {
             _repository = repository;
             _mediator = mediator;
